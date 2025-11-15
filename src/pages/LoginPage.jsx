@@ -1,7 +1,6 @@
-// src/pages/LoginPage.jsx
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext"; // <- use this
+import { useAuth } from "../context/AuthContext"; 
 
 export default function LoginPage() {
     const { user, signInWithGoogle } = useAuth();
@@ -9,7 +8,6 @@ export default function LoginPage() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
-    // If user already signed in, redirect away from login
     useEffect(() => {
         if (user) navigate("/blogs", { replace: true });
     }, [user, navigate]);
@@ -23,7 +21,7 @@ export default function LoginPage() {
         setError("");
         setLoading(true);
         try {
-            await signInWithGoogle(); // popup handled in AuthContext
+            await signInWithGoogle(); 
             navigate("/blogs");
         } catch (err) {
             console.error("Google sign-in error:", err);

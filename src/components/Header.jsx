@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext"; 
+import { useAuth } from "../context/AuthContext";
+import { FaUserCircle } from "react-icons/fa"; 
 
 export default function Header() {
     const { user, logout } = useAuth();
@@ -15,10 +16,9 @@ export default function Header() {
             alert("Logout failed. Try again.");
         }
     }
-
     return (
         <header className="header">
-            <Link to="/" className="logo">
+            <Link to="blogs" className="logo">
                 Blocq .
             </Link>
 
@@ -26,16 +26,27 @@ export default function Header() {
                 {user ? (
                     <>
                         <div className="user-profile" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                            <img
-                                src={user.photoURL || "https://via.placeholder.com/40x40/333333/FFFFFF?text=U"}
-                                alt="Profile"
-                                style={{
-                                    width: 40,
-                                    height: 40,
-                                    borderRadius: "50%",
-                                    objectFit: "cover",
-                                }}
-                            />
+                            
+                            {user.photoURL ? (
+                                <img
+                                    src={user.photoURL}
+                                    alt="Profile"
+                                    referrerPolicy="no-referrer" 
+                                    style={{
+                                        width: 35,
+                                        height: 35,
+                                        marginRight: 0,
+                                        borderRadius: "50%",
+                                        objectFit: "cover",
+                                    }}
+                                />
+                            ) : (
+                                <FaUserCircle
+                                    size={40}
+                                    style={{ color: "#333" }} 
+                                />
+                            )}
+
                             <span>{user.displayName || user.email || "User"}</span>
                         </div>
 
