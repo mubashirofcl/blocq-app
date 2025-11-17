@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-  <img src="/src/assets/blocq-preview.gif" alt="Blocq App Preview" width="80%">
+  <img src="/blocq-app/src/assets/" alt="Blocq App Preview" width="80%">
 </p>
 
 
