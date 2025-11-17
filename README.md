@@ -1,3 +1,5 @@
+<center>
+  
 # 📝 Blocq – The Modern Blog App
 
 <h4 align="center">
@@ -8,6 +10,7 @@
   <img src="/src/assets/blocq-preview.gif" alt="Blocq App Preview" width="80%">
 </p>
 
+<center/>
 ---
 
 ## 📖 About The Project
