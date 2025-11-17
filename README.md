@@ -1,16 +1,45 @@
-# React + Vite
+# 📝 Blocq – The Modern Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4 align="center">
+  A real-time blogging platform built with React, Firebase, Tailwind, and Google Authentication.
+</h4>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="/src/assets/blocq-preview.gif" alt="Blocq App Preview" width="80%">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Blocq is a modern, clean, and fully functional blogging application. It allows anyone to browse and read blogs without logging in. Authenticated users (via Google Sign-In) gain CRUD (Create, Read, Update, Delete) privileges for their own posts.
 
-## Expanding the ESLint configuration
+The project uses Firebase Firestore for a real-time database and React with Tailwind CSS for a polished, responsive user interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+This project was built using the following technologies:
+
+* **Frontend:** React (Vite)
+* **Styling:** Tailwind CSS & Custom CSS
+* **Backend & Database:** Firebase (Firestore)
+* **Authentication:** Firebase Authentication (Google)
+* **Routing:** React Router DOM
+* **Form Management:** React Hook Form
+* **Icons:** React Icons
+
+---
+
+## ✨ Features
+
+* **Public Access:** Anyone can read blog posts without an account.
+* **Authentication:** Secure Google Sign-In for users.
+* **CRUD Operations:** Authenticated users can **C**reate, **E**dit, and **D**elete their *own* posts.
+* **Author Details:** Every post stores and displays the author's name, email, and profile picture.
+* **Real-time Data:** Uses Firestore `onSnapshot()` to update posts live without a page refresh.
+* **Timestamps:** Automatically adds server-side timestamps for accurate post dates.
+* **Theme Toggle:** Dark / Light mode toggle with user preference saved in `localStorage`.
+* **Responsive Design:** Fully responsive layout for all device sizes.
+* **Image Handling:** Supports optional blog images (gracefully handles missing or invalid URLs).
