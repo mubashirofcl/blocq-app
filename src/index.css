@@ -49,7 +49,6 @@
     transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
-/* base body */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -57,7 +56,6 @@ body {
     color: var(--text);
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -111,7 +109,6 @@ body {
     color: var(--text);
 }
 
-/* Buttons */
 .nav-button {
     background-color: transparent;
     color: var(--accent);
@@ -189,7 +186,6 @@ body {
     color: var(--button-text);
 }
 
-/* Hero */
 .hero-section {
     position: relative;
     display: flex;
@@ -261,7 +257,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Card */
 .blog-slider {
     width: 95%;
     position: relative;
@@ -353,7 +348,6 @@ body {
     }
 }
 
-/* author small avatar/name */
 .authorImg {
     width: 25px;
     font-weight: 900;
@@ -450,7 +444,6 @@ body {
     border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* edit / remove overrides */
 .blog-slider__button.btn-edit:hover {
     color: #006400;
     border-color: #006400;
@@ -499,7 +492,6 @@ body {
     z-index: 10;
 }
 
-/* bottom section */
 .bottom-section {
     position: relative;
     width: 70%;
@@ -556,7 +548,6 @@ body {
     width: 70%;
 }
 
-/* Forms */
 .form-container {
     display: flex;
     justify-content: center;
@@ -682,7 +673,6 @@ body {
     margin-left: .25em;
 }
 
-/* footer */
 footer {
     background-color: var(--bg);
     color: var(--muted);
@@ -702,7 +692,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* 404 PAGE */
 .notfound-container {
     height: 70vh;
     width: 100%;
@@ -722,6 +711,11 @@ footer a:hover {
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(10px);
+}
+
+.dark .notfound-box {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 40px var(--card-shadow);
 }
 
 .notfound-title {
@@ -759,5 +753,11 @@ footer a:hover {
 
 .notfound-btn:hover {
     background: #222;
+    transform: translateY(-2px);
+}
+
+.dark .notfound-btn:hover {
+    background: #eee;
+    color: #000;
     transform: translateY(-2px);
 }
