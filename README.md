@@ -1,5 +1,3 @@
-
-
 <h2 align="center"> ⚛ Blocq – The Modern Blog App </h2>
 
 <h4 align="center">
@@ -10,6 +8,11 @@
   <img src="/src/assets/blocq-preview.gif" alt="Blocq App Preview" width="80%">
 </p>
 
+<p align="center">
+  <a href="https://your-live-site-url-here.netlify.app" target="_blank">
+    <img src="https://img.shields.io/badge/🔗 Live Preview-000000?style=for-the-badge&logo=google-chrome&logoColor=white">
+  </a>
+</p>
 
 ---
 
