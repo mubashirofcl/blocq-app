@@ -42,7 +42,7 @@ export default function EditBlogPage() {
 
                 if (data.authorId !== user.uid) {
                     alert("You don't have permission to edit this post");
-                    navigate("/blogs");
+                    navigate("/blogs",{replace: true});
                     return;
                 }
 
