@@ -42,7 +42,7 @@ export default function EditBlogPage() {
 
                 if (data.authorId !== user.uid) {
                     alert("You don't have permission to edit this post");
-                    navigate("/blogs",{replace: true});
+                    navigate("/blogs");
                     return;
                 }
 
@@ -78,7 +78,7 @@ export default function EditBlogPage() {
 
             setTimeout(() => {
                 setLoading(false);
-                navigate("/blogs");
+                navigate("/blogs", { replace: true });
             }, 350);
 
         } catch (err) {
