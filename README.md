@@ -1,6 +1,6 @@
 
 
-<h2 align="center"> 📝 Blocq – The Modern Blog App </h2>
+<h2 align="center"> ⚛ Blocq – The Modern Blog App </h2>
 
 <h4 align="center">
   A real-time blogging platform built with React, Firebase, Tailwind CSS, and Google Authentication.
