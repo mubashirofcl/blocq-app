@@ -35,7 +35,7 @@ export default function AddBlogPage() {
             );
 
             reset();
-            navigate("/blogs");
+            navigate("/blogs",{replace: true});
         } catch (err) {
             console.error("addPost error:", err);
             alert(err.message || "Failed to publish post");
