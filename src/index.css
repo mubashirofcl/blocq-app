@@ -504,18 +504,26 @@ body {
     position: relative;
     width: 70%;
     min-height: 50px;
-    background-color: var(--panel);
     display: flex;
     align-items: center;
     padding: 40px 50px;
     box-sizing: border-box;
     overflow: hidden;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+
     border: 1px solid var(--panel-border);
     border-radius: 25px;
     z-index: 2;
     margin: -150px auto 50px auto;
+    background-color: var(--panel);
+}
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+
+    .bottom-section {
+        background-color: rgba(255, 255, 255, 0.049);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 .bottom-content {
