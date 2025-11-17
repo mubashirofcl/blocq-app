@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://your-live-site-url-here.netlify.app" target="_blank">
-    <img src="https://blocq-app.vercel.app/🔗 Live Preview-000000?style=for-the-badge&logo=google-chrome&logoColor=white">
+  <a href="https://blocq-app.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🔗 Live Preview-000000?style=for-the-badge&logo=google-chrome&logoColor=white">
   </a>
 </p>
 
