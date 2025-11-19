@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <LoaderProvider>
-      <GlobalLoader />   {/* <-- MUST be here */}
+      <GlobalLoader /> 
       <RouterProvider router={router} />
     </LoaderProvider>
   );

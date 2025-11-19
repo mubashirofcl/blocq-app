@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useAuth } from "../context/AuthContext";
+import useAuth from "../hooks/useAuth";
 import { getPost, updatePost } from "../services/postsService";
 import { useLoader } from "../context/LoaderContext";
 

@@ -36,7 +36,6 @@ export default function GlobalLoader() {
         transform: "translateZ(0)",
     };
 
-    // grid container size
     const gridStyle = {
         width: 70,
         height: 70,
@@ -46,7 +45,6 @@ export default function GlobalLoader() {
         marginBottom: 0,
     };
 
-    // base block style (animation applied inline per-block)
     const blockBase = {
         width: 20,
         height: 20,
