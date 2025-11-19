@@ -1,6 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const LoaderContext = createContext();
+export const LoaderContext = createContext();
 
 export function LoaderProvider({ children }) {
     const [loading, setLoading] = useState(false);
@@ -11,5 +11,3 @@ export function LoaderProvider({ children }) {
         </LoaderContext.Provider>
     );
 }
-
-export const useLoader = () => useContext(LoaderContext);

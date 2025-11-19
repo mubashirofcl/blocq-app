@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 import { getPost, updatePost } from "../services/postsService";
-import { useLoader } from "../context/LoaderContext";
+import { useLoader } from "../hooks/useLoader";
 
 export default function EditBlogPage() {
     const { id } = useParams();

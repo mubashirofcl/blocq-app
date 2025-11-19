@@ -4,7 +4,7 @@ import useAuth from "../hooks/useAuth";
 import { subscribeToPosts, deletePost } from "../services/postsService";
 import Swal from "sweetalert2";
 import defaultUser from "../assets/user.png";
-import { useLoader } from "../context/LoaderContext";
+import { useLoader } from "../hooks/useLoader";
 
 
 export default function BlogListPage() {
