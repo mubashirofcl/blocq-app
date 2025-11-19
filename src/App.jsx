@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import PrivateRoute from "./components/PrivateRoute";
-import AppLayout from "./components/AppLayout";
+import AppLayout from "./layouts/AppLayout";
 
 import LandingPage from "./pages/LandingPage";
 import BlogListPage from "./pages/BlogListPage";
