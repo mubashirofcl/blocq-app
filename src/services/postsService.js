@@ -24,9 +24,9 @@ function tsToDateIfNeeded(value) {
     return isNaN(parsed.getTime()) ? null : parsed;
 }
 
-// -----------------------------
+
 // ADD POST
-// -----------------------------
+
 export async function addPost(postData, author) {
     if (!author) throw new Error("Not authenticated");
 
@@ -45,9 +45,9 @@ export async function addPost(postData, author) {
     return ref.id;
 }
 
-// -----------------------------
+
 // GET POST
-// -----------------------------
+
 export async function getPost(id) {
     const ref = doc(db, "posts", id);
     const snap = await getDoc(ref);
@@ -62,9 +62,9 @@ export async function getPost(id) {
     };
 }
 
-// -----------------------------
+
 // UPDATE POST
-// -----------------------------
+
 export async function updatePost(id, postData) {
     const ref = doc(db, "posts", id);
     await updateDoc(ref, {
@@ -73,17 +73,15 @@ export async function updatePost(id, postData) {
     });
 }
 
-// -----------------------------
 // DELETE POST
-// -----------------------------
+
 export async function deletePost(id) {
     const ref = doc(db, "posts", id);
     await deleteDoc(ref);
 }
 
-// -----------------------------
 // REAL-TIME POSTS SUBSCRIPTION
-// -----------------------------
+
 export function subscribeToPosts(callback) {
     const q = query(postsCol, orderBy("createdAt", "desc"));
 
